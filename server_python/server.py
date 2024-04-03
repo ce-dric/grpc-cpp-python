@@ -17,6 +17,7 @@ def serve():
     service_pb2_grpc.add_MyServiceServicer_to_server(MyService(), server)
     server.add_insecure_port('[::]:50051')
     server.start()
+    print('Server started!')
     server.wait_for_termination()
 
 if __name__ == '__main__':
