@@ -7,6 +7,7 @@
 #endif
 
 #include <iostream>
+#include "grpc_Impl.h"
 
 namespace Basic
 {
@@ -15,8 +16,8 @@ namespace Basic
 	public:
 		static int Add(int a, int b);
 		static void PrintHelloWorld();
-		/*static int Add£ß2(int a, int b);
-		static void PrintHelloWorld£ß2();*/
+		static int Add£ßserver(int a, int b);
+		static void PrintHelloWorld£ßserver();
 	};
 }
 

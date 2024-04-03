@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="gRPC">
+      <UniqueIdentifier>{28fb13b4-375e-45c4-8627-126e751fa914}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -27,6 +30,12 @@
     <ClInclude Include="grpc_Impl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\server_python\service.pb.h">
+      <Filter>gRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\server_python\service.grpc.pb.h">
+      <Filter>gRPC</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -40,6 +49,12 @@
     </ClCompile>
     <ClCompile Include="grpc_Impl.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\server_python\service.grpc.pb.cc">
+      <Filter>gRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\server_python\service.pb.cc">
+      <Filter>gRPC</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
