@@ -12,13 +12,13 @@ using `gRPC` protocols
     > powershell.exe .\bootstrap-vcpkg.bat
 
     # c++ 17
-    # git checkout be1e1b72e7c5a9a07268c99c4a50d2ace0e2b469 -- ports/abseil
-    # cd .\triplets
+    > git checkout be1e1b72e7c5a9a07268c99c4a50d2ace0e2b469 -- ports/abseil
+    > cd .\triplets
     # in x64-windows-static.cmake, x64-windows.cmake
     # append belows
-    # set(VCPKG_CXX_FLAGS "/std:c++17")
-    # set(VCPKG_C_FLAGS "")
-    # cd ..
+    > set(VCPKG_CXX_FLAGS "/std:c++17")
+    > set(VCPKG_C_FLAGS "")
+    > cd ..
 
     > .\vcpkg install abseil:x64-windows
     > .\vcpkg install grpc:x64-windows
@@ -45,5 +45,8 @@ using `gRPC` protocols
 
     ```shell
     (my_env) > python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. service.proto
-    (my_env) > python server.py
     ```
+
+### Usage
+
+![alt text](image.png)
